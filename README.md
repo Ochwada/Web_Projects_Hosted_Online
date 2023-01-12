@@ -2,6 +2,6 @@
 
 
 ### Hosted on vercel
-##### Newsletter Signup app- https://newsletter-signup-ochwada.vercel.app/
-##### Todo List app - todolist-ochwada.vercel.app (to be reviewed)
+##### Newsletter Signup app- [Newsletter Site](https://newsletter-signup-ochwada.vercel.app/) 
+##### Todo List app - [Todo Site](https://todolist-ochwada.vercel.app/)(to be reviewed)
  
