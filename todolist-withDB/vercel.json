@@ -24,7 +24,7 @@
    "version": 2,
    "name": "todolist - app",
    "rewrites": [
-     { "source": "/api/(.*)", "destination": "/api/handler.js" }
+     { "source": "/.*", "dest": "app.js" }
    ],
    "headers": [
      { "source": "**/*.@(jpg|jpeg|png|gif)", "headers": [ { "key": "Cache-Control", "value": "max-age=31536000" } ] }
