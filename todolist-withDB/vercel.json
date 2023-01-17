@@ -1,4 +1,4 @@
-{
+/* {
     "version": 2,
     "name": "todolist - app",
     "builds": [
@@ -9,7 +9,7 @@
     ],
     "headers": [
       {
-        "source": "**/*.@(jpg|jpeg|png|gif)",
+        "source": "**//*.@(jpg|jpeg|png|gif)",
         "headers": [
           {
             "key": "Content-Security-Policy",
@@ -18,6 +18,17 @@
         ]
       }
     ]
+ } */
+
+ {
+   "version": 2,
+   "name": "todolist - app",
+   "rewrites": [
+     { "source": "/api/(.*)", "destination": "/api/handler.js" }
+   ],
+   "headers": [
+     { "source": "**/*.@(jpg|jpeg|png|gif)", "headers": [ { "key": "Cache-Control", "value": "max-age=31536000" } ] }
+   ]
  }
 
 
