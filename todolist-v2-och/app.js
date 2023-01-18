@@ -18,11 +18,9 @@ app.use(express.static("public"))
 
 
 // create a database in Mongoose
-// ---- Connection URL/ mongo -----
+// ---- Connection URL -----
 mongoose.set('strictQuery', true);
-mongoose.connect('mongodb://mongo:27017/todolist-withDB')
-.then(() => console.log('MongoDB connected'))
-.catch(()=> console.log(err));
+mongoose.connect('mongodb+srv://ochwada:-Natabona2288@cluster0.3mbg9nw.mongodb.net/todolistDB');
 
 // ---------Mongo Schema -------- 
 const itemsSchema = new mongoose.Schema({
